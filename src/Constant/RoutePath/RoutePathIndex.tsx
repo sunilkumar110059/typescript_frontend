@@ -1,0 +1,73 @@
+const ROUTE_NAV = {
+    HOME_PATH: '/',
+    CRUD_PATH: '/crudwrap',
+    TAB_PATH: '/tabwrap',
+    HOC_PATH: '/hocwrap',
+    TODO_PATH: '/todowrap',
+    DSA_PATH: '/dsawrap',
+    TS_PATH: '/tswrap',
+}
+
+const ROUTE_PAGES = {
+    CRUD1_PATH: `${ROUTE_NAV.CRUD_PATH}/crud1`,
+    CRUD2_PATH: `${ROUTE_NAV.CRUD_PATH}/crud2`,
+    CRUD3_PATH: `${ROUTE_NAV.CRUD_PATH}/crud3`,
+    CRUD4_PATH: `${ROUTE_NAV.CRUD_PATH}/crud4`,
+    CRUD5_PATH: `${ROUTE_NAV.CRUD_PATH}/crud5`,
+
+
+    TAB1_PATH: `${ROUTE_NAV.TAB_PATH}/tab1`,
+    TAB2_PATH: `${ROUTE_NAV.TAB_PATH}/tab2`,
+    TAB3_PATH: `${ROUTE_NAV.TAB_PATH}/tab3`,
+    TAB4_PATH: `${ROUTE_NAV.TAB_PATH}/tab4`,
+    TAB5_PATH: `${ROUTE_NAV.TAB_PATH}/tab5`,
+
+
+    HOC1_PATH: `${ROUTE_NAV.HOC_PATH}/hoc1`,
+    HOC2_PATH: `${ROUTE_NAV.HOC_PATH}/hoc2`,
+    HOC3_PATH: `${ROUTE_NAV.HOC_PATH}/hoc3`,
+    HOC4_PATH: `${ROUTE_NAV.HOC_PATH}/hoc4`,
+    HOC5_PATH: `${ROUTE_NAV.HOC_PATH}/hoc5`,
+
+    TODO1_PATH: `${ROUTE_NAV.TODO_PATH}/todo1`,
+    TODO2_PATH: `${ROUTE_NAV.TODO_PATH}/todo2`,
+    TODO3_PATH: `${ROUTE_NAV.TODO_PATH}/todo3`,
+    TODO4_PATH: `${ROUTE_NAV.TODO_PATH}/todo4`,
+    TODO5_PATH: `${ROUTE_NAV.TODO_PATH}/todo5`,
+
+    DSA1_PATH: `${ROUTE_NAV.DSA_PATH}/dsa1`,
+    DSA2_PATH: `${ROUTE_NAV.DSA_PATH}/dsa2`,
+    DSA3_PATH: `${ROUTE_NAV.DSA_PATH}/dsa3`,
+    DSA4_PATH: `${ROUTE_NAV.DSA_PATH}/dsa4`,
+    DSA5_PATH: `${ROUTE_NAV.DSA_PATH}/dsa5`,
+
+
+    TS1_PATH: `${ROUTE_NAV.TS_PATH}/ts1`,
+    TS2_PATH: `${ROUTE_NAV.TS_PATH}/ts2`,
+    TS3_PATH: `${ROUTE_NAV.TS_PATH}/ts3`,
+    TS4_PATH: `${ROUTE_NAV.TS_PATH}/ts4`,
+    TS5_PATH: `${ROUTE_NAV.TS_PATH}/ts5`,
+    TS6_PATH: `${ROUTE_NAV.TS_PATH}/ts6`,
+    TS7_PATH: `${ROUTE_NAV.TS_PATH}/ts7`,
+    TS8_PATH: `${ROUTE_NAV.TS_PATH}/ts8`,
+    TS9_PATH: `${ROUTE_NAV.TS_PATH}/ts9`,
+    TS10_PATH: `${ROUTE_NAV.TS_PATH}/ts10`,
+    TS11_PATH: `${ROUTE_NAV.TS_PATH}/ts11`,
+    TS12_PATH: `${ROUTE_NAV.TS_PATH}/ts12`,
+    TS13_PATH: `${ROUTE_NAV.TS_PATH}/ts13`,
+    TS14_PATH: `${ROUTE_NAV.TS_PATH}/ts14`,
+    TS15_PATH: `${ROUTE_NAV.TS_PATH}/ts15`,
+    TS16_PATH: `${ROUTE_NAV.TS_PATH}/ts16`,
+    TS17_PATH: `${ROUTE_NAV.TS_PATH}/ts17`,
+    TS18_PATH: `${ROUTE_NAV.TS_PATH}/ts18`,
+    TS19_PATH: `${ROUTE_NAV.TS_PATH}/ts19`,
+    TS20_PATH: `${ROUTE_NAV.TS_PATH}/ts20`,
+    TS21_PATH: `${ROUTE_NAV.TS_PATH}/ts21`,
+    TS22_PATH: `${ROUTE_NAV.TS_PATH}/ts22`,
+    TS23_PATH: `${ROUTE_NAV.TS_PATH}/ts23`,
+    TS24_PATH: `${ROUTE_NAV.TS_PATH}/ts24`,
+    TS25_PATH: `${ROUTE_NAV.TS_PATH}/ts25`,
+
+}
+
+export { ROUTE_NAV, ROUTE_PAGES }
