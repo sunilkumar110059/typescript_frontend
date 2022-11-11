@@ -25,8 +25,10 @@ import TS22 from "./TS22/TS22";
 import TS23 from "./TS23/TS23";
 import TS24 from "./TS24/TS24";
 import TS25 from "./TS25/TS25";
+import TS26 from "./TS26/TS26";
+import TS27 from "./TS27/TS27";
 
 export {
     TSWrapIndex, TS1, TS2, TS3, TS4, TS5, TS6, TS7, TS8, TS9, TS10, TS11, TS12, TS13,
-    TS14, TS15, TS16, TS17, TS18, TS19, TS20, TS21, TS22, TS23, TS24, TS25
+    TS14, TS15, TS16, TS17, TS18, TS19, TS20, TS21, TS22, TS23, TS24, TS25, TS26, TS27
 }

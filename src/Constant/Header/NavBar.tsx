@@ -12,6 +12,8 @@ function NavBar() {
                 <div className="col-auto"><NavLink to={ROUTE_NAV.HOC_PATH} className="d-flex align-items-center h-100 py-1 px-3">HOC</NavLink></div>
                 <div className="col-auto"><NavLink to={ROUTE_NAV.TODO_PATH} className="d-flex align-items-center h-100 py-1 px-3">Todo</NavLink></div>
                 <div className="col-auto"><NavLink to={ROUTE_NAV.DSA_PATH} className="d-flex align-items-center h-100 py-1 px-3">DS Algorithm</NavLink></div>
+                <div className="col-auto"><NavLink to={ROUTE_NAV.OOP_PATH} className="d-flex align-items-center h-100 py-1 px-3">OOP</NavLink></div>
+                <div className="col-auto"><NavLink to={ROUTE_NAV.RATING_PATH} className="d-flex align-items-center h-100 py-1 px-3">Rating</NavLink></div>
                 <div className="col-auto"><NavLink to={ROUTE_NAV.TS_PATH} className="d-flex align-items-center h-100 py-1 px-3">Type Script</NavLink></div>
             </div>
         </div>

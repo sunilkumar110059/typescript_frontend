@@ -29,12 +29,14 @@ function TSWrapIndex() {
         { name: "TS 23", path: ROUTE_PAGES.TS23_PATH },
         { name: "TS 24", path: ROUTE_PAGES.TS24_PATH },
         { name: "TS 25", path: ROUTE_PAGES.TS25_PATH },
+        { name: "TS 26", path: ROUTE_PAGES.TS26_PATH },
+        { name: "TS 27", path: ROUTE_PAGES.TS27_PATH },
     ]
 
     return (
         <Fragment>
             <div className='cover mt-4 nested_tab'>
-                <div className='row'>
+                <div className='row gx-2'>
                     {List.map((curElem, index) => (
                         <div className="col-auto" key={index} >
                             <NavLink className='py-1 px-2 d-block bg2_5' to={curElem.path}> {curElem.name} </NavLink>

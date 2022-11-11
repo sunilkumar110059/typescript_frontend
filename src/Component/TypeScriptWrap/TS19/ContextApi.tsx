@@ -2,6 +2,7 @@ import React, { createContext, useState } from 'react';
 
 
 export const MyContext = createContext({} as UserContextType)
+
 type AuthUser = {
     id: number;
     name: string;

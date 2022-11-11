@@ -5,6 +5,9 @@ const ROUTE_NAV = {
     HOC_PATH: '/hocwrap',
     TODO_PATH: '/todowrap',
     DSA_PATH: '/dsawrap',
+    OOP_PATH: '/oopwrap',
+    RATING_PATH: '/ratingwrap',
+    
     TS_PATH: '/tswrap',
 }
 
@@ -15,13 +18,11 @@ const ROUTE_PAGES = {
     CRUD4_PATH: `${ROUTE_NAV.CRUD_PATH}/crud4`,
     CRUD5_PATH: `${ROUTE_NAV.CRUD_PATH}/crud5`,
 
-
     TAB1_PATH: `${ROUTE_NAV.TAB_PATH}/tab1`,
     TAB2_PATH: `${ROUTE_NAV.TAB_PATH}/tab2`,
     TAB3_PATH: `${ROUTE_NAV.TAB_PATH}/tab3`,
     TAB4_PATH: `${ROUTE_NAV.TAB_PATH}/tab4`,
     TAB5_PATH: `${ROUTE_NAV.TAB_PATH}/tab5`,
-
 
     HOC1_PATH: `${ROUTE_NAV.HOC_PATH}/hoc1`,
     HOC2_PATH: `${ROUTE_NAV.HOC_PATH}/hoc2`,
@@ -41,7 +42,18 @@ const ROUTE_PAGES = {
     DSA4_PATH: `${ROUTE_NAV.DSA_PATH}/dsa4`,
     DSA5_PATH: `${ROUTE_NAV.DSA_PATH}/dsa5`,
 
-
+    OOP1_PATH: `${ROUTE_NAV.OOP_PATH}/oop1`,
+    OOP2_PATH: `${ROUTE_NAV.OOP_PATH}/oop2`,
+    OOP3_PATH: `${ROUTE_NAV.OOP_PATH}/oop3`,
+    OOP4_PATH: `${ROUTE_NAV.OOP_PATH}/oop4`,
+    OOP5_PATH: `${ROUTE_NAV.OOP_PATH}/oop5`,
+    
+    RATING1_PATH: `${ROUTE_NAV.RATING_PATH}/rating1`,
+    RATING2_PATH: `${ROUTE_NAV.RATING_PATH}/rating2`,
+    RATING3_PATH: `${ROUTE_NAV.RATING_PATH}/rating3`,
+    RATING4_PATH: `${ROUTE_NAV.RATING_PATH}/rating4`,
+    RATING5_PATH: `${ROUTE_NAV.RATING_PATH}/rating5`,
+    
     TS1_PATH: `${ROUTE_NAV.TS_PATH}/ts1`,
     TS2_PATH: `${ROUTE_NAV.TS_PATH}/ts2`,
     TS3_PATH: `${ROUTE_NAV.TS_PATH}/ts3`,
@@ -67,6 +79,8 @@ const ROUTE_PAGES = {
     TS23_PATH: `${ROUTE_NAV.TS_PATH}/ts23`,
     TS24_PATH: `${ROUTE_NAV.TS_PATH}/ts24`,
     TS25_PATH: `${ROUTE_NAV.TS_PATH}/ts25`,
+    TS26_PATH: `${ROUTE_NAV.TS_PATH}/ts26`,
+    TS27_PATH: `${ROUTE_NAV.TS_PATH}/ts27`,
 
 }
 

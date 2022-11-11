@@ -15,9 +15,14 @@ import { HOCWrapIndex, HOCIndex1, HOCIndex2, HOCIndex3, HOCIndex4, HOCIndex5 } f
 import { TodoWrapIndex, TodoIndex1, TodoIndex2, TodoIndex3, TodoIndex4, TodoIndex5 } from './Component/TodoWrap/TodoWrapModule';
 import { DSAWrapIndex, DSAIndex1, DSAIndex2, DSAIndex3, DSAIndex4, DSAIndex5 } from './Component/DSAlgo/DSAWrapModule';
 
+
+import { OOPWrapIndex, OOPIndex1, OOPIndex2, OOPIndex3, OOPIndex4, OOPIndex5 } from './Component/OOpWrap/OOPWrapModule';
+
+import { RatingWrapIndex, RatingIndex1, RatingIndex2, RatingIndex3, RatingIndex4, RatingIndex5 } from './Component/RatingWrap/RatingModule'
+
 import {
   TSWrapIndex, TS1, TS2, TS3, TS4, TS5, TS6, TS7, TS8, TS9, TS10, TS11, TS12, TS13,
-  TS14, TS15, TS16, TS17, TS18, TS19, TS20, TS21, TS22, TS23, TS24, TS25
+  TS14, TS15, TS16, TS17, TS18, TS19, TS20, TS21, TS22, TS23, TS24, TS25, TS26, TS27
 } from './Component/TypeScriptWrap/TSModule';
 
 function App() {
@@ -36,7 +41,7 @@ function App() {
             <Route path={ROUTE_PAGES.CRUD4_PATH} element={<CrudIndex4 />} />
             <Route path={ROUTE_PAGES.CRUD5_PATH} element={<CrudIndex5 />} />
           </Route>
-
+          
           <Route path={ROUTE_NAV.TAB_PATH} element={<TabWrapIndex />}>
             <Route index element={<TabIndex1 />} />
             <Route path={ROUTE_PAGES.TAB1_PATH} element={<TabIndex1 />} />
@@ -73,7 +78,26 @@ function App() {
             <Route path={ROUTE_PAGES.DSA5_PATH} element={<DSAIndex5 />} />
           </Route>
 
+          <Route path={ROUTE_NAV.OOP_PATH} element={<OOPWrapIndex />} >
+            <Route index element={<OOPIndex1 />} />
+            <Route path={ROUTE_PAGES.OOP1_PATH} element={<OOPIndex1 />} />
+            <Route path={ROUTE_PAGES.OOP2_PATH} element={<OOPIndex2 />} />
+            <Route path={ROUTE_PAGES.OOP3_PATH} element={<OOPIndex3 />} />
+            <Route path={ROUTE_PAGES.OOP4_PATH} element={<OOPIndex4 />} />
+            <Route path={ROUTE_PAGES.OOP5_PATH} element={<OOPIndex5 />} />
+          </Route>
+
           
+          <Route path={ROUTE_NAV.RATING_PATH} element={<RatingWrapIndex />} >
+            <Route index element={<RatingIndex1 />} />
+            <Route path={ROUTE_PAGES.RATING1_PATH} element={<RatingIndex1 />} />
+            <Route path={ROUTE_PAGES.RATING2_PATH} element={<RatingIndex2 />} />
+            <Route path={ROUTE_PAGES.RATING3_PATH} element={<RatingIndex3 />} />
+            <Route path={ROUTE_PAGES.RATING4_PATH} element={<RatingIndex4 />} />
+            <Route path={ROUTE_PAGES.RATING5_PATH} element={<RatingIndex5 />} />
+          </Route>
+
+        
           <Route path={ROUTE_NAV.TS_PATH} element={<TSWrapIndex />} >
             <Route index element={<TS1 />} />
             <Route path={ROUTE_PAGES.TS1_PATH} element={<TS1 />} />
@@ -101,6 +125,8 @@ function App() {
             <Route path={ROUTE_PAGES.TS23_PATH} element={<TS23 />} />
             <Route path={ROUTE_PAGES.TS24_PATH} element={<TS24 />} />
             <Route path={ROUTE_PAGES.TS25_PATH} element={<TS25 />} />
+            <Route path={ROUTE_PAGES.TS26_PATH} element={<TS26 />} />
+            <Route path={ROUTE_PAGES.TS27_PATH} element={<TS27 />} />
           </Route>
 
           <Route path={'*'} element={<PageNotFoundIndex />} />
