@@ -11,11 +11,11 @@ function PostUser() {
     const [PostUserState, SetPostUser] = useState<PostType>(
         {
             id: new Date().getTime(),
-            name: "Clementina DuBuque",
-            username: "Moriah.Stanton",
-            email: "Rey.Padberg@karina.biz",
-            phone: "024-648-3804",
-            website: "ambrose.net",
+            name: "name"+Math.random().toString(36).substring(1, 10),
+            username: "username"+ Math.random().toString(36).substring(2, 30),
+            email: Math.random().toString(20).substring(3, 28) + "@gmail.com",
+            phone: Math.floor(Math.random() * 1000000000).toString(),
+            website: "xyz" + Math.random().toString(18).substring(1, 9) + ".com",
 
             address: {
                 street: "Kattie Turnpike",
@@ -116,7 +116,7 @@ function PostUser() {
                             onChangeHandler={onChangeHander}
                         />
                     </div>
-                    
+
                     <div className='col-auto'>
                         <SuccessButton
                             ButtonText='Add User'

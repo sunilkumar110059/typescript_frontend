@@ -2,11 +2,8 @@ import { useContext } from "react";
 import { SuccessButton } from "../../../Shared/SharedComponentPath";
 import { MyContext } from "./ContextApi";
 
-
-
 function GetUser() {
     const { Users, SetUserFn } = useContext(MyContext)
-    
     const loginHandler = () => {
         SetUserFn([
             ...Users,
@@ -35,10 +32,7 @@ function GetUser() {
                     <h1>List of Array Pass By Context API</h1>
                 </div>
             </div>
-
-
-
-
+            
             <table className='d-table-collapse w-100 border1 bordercolor2_5'>
                 <thead className='bg3_1 color1'>
                     <tr>

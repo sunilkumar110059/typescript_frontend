@@ -1,9 +1,7 @@
-import React, { Fragment } from 'react'
-
+import React, { Fragment } from 'react';
 
 
 function TodoIndex3() {
-
 
     return (
         <Fragment>
@@ -13,10 +11,7 @@ function TodoIndex3() {
                     <div className="col-auto py-1 border_left1 bordercolor2_4 d-flex align-items-center"> Todo 3 </div>
                 </div>
             </div>
-            <div className='wrapper px-4'>
-
-                Todo 3
-            </div>
+            <div className='wrapper px-4'>Todo  Page </div>
         </Fragment>
     )
 }

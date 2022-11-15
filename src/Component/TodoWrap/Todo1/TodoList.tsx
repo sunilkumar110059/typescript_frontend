@@ -4,8 +4,6 @@ import { InterFaceTodo } from './InterfaceTodo1';
 interface TodoListProps {
     todoUser: InterFaceTodo;
     indexNo: number,
-    //   deleteHandleFun: (id: string) => void
-
     deleteHandleFun: (id:string) => void
 
 }
