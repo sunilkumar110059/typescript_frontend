@@ -25,6 +25,8 @@ overflow-x: hidden;
 --body-color:#000;
 --body-bg:#fff;
 
+--primary:#000;
+--secondary:#dc3545;
 --success:#198754;
 --info:#0dcaf0;
 --warning:#ffc107;
@@ -97,3 +99,18 @@ overflow-x: hidden;
 
   .overlay_1{background-color: rgba(0, 0, 0, 0.7);}
   .shadow1{box-shadow:var(--shadow1)}
+
+
+
+  .btn{ cursor: pointer; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-right: 1rem;padding-left: 1rem;}
+  .btn[disabled]{cursor:default;opacity: 0.6;}
+  .btn_primary{ background-color:var(--primary);color:var(--color1)}
+  .btn_secondary{background-color:var(--secondary);color:var(--color1)}  
+  .btn_success{background-color:var(--success);color:var(--color1)}
+  .btn_info{background-color:var(--info);color:var(--color1)}
+  .btn_warning{background-color:var(--warning);color:var(--color1)}
+  .btn_danger{background-color:var(--danger);color:var(--color1)}
+
+  
+
+

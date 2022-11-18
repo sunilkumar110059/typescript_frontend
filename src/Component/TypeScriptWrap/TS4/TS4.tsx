@@ -4,7 +4,7 @@ import { SelectBox } from '../../../Shared/SharedComponentPath';
 
 function TS4() {
     const [StatusState, SetStatusFn] = useState<any>("")
-    const onChangeHandle = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
         SetStatusFn(event.target.value)
     }
 
@@ -21,15 +21,24 @@ function TS4() {
             <div className='container'>
                 <div className="row">
                     <div className="col">
+                
+
                         <SelectBox
-                            LabelAddClass="d-block mb-1 fw-bold"
-                            LabelText="Select One"
-                            FormAddClass="border1 bordercolor2_4"
-                            SelectFaAddClass={"fa_right bg3_1"}
-                            SelectAddClassFaIcon={'color2_1 font-size2 fa-chevron-down'}
-                            SelectOption={["LOADING", "SUCCESS", "ERROR"].map((arr, ind) => (<option value={arr} key={ind}> {arr} </option>))}
-                            onChangeHandler={onChangeHandle}
+                            directionIcon={'right_icon bg1'}
+                            labelStyleClass={'d-block mb-1 fw-bold'}
+                            labelText={'Select One'}
+                            formStyleClass={'border1 bordercolor2_4'}
+                            selectStyleClass={'Add_inputClass'}
+                            selectStyleId={'selectId'}
+                            name={'selectitem'}
+                            placeholder={'Placeholder Text'}
+                            optionData={["LOADING", "SUCCESS", "ERROR"].map((item, index) => (
+                                <option value={item} key={index}> {item} </option>
+                            ))
+                            }
+                            onChange={(event) => onChangeHandler(event)}
                         />
+
                     </div>
                     <div className="col">
                         <UnionLiteral

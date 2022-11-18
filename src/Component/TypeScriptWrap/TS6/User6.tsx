@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Input, SuccessButton } from '../../../Shared/SharedComponentPath';
+import { Input, Button } from '../../../Shared/SharedComponentPath';
 import { userTypeObj, userObj } from './TypeUser';
 
 
 type userProps = {
-    getValueFun: (obj:userTypeObj) => void
+    getValueFun: (obj: userTypeObj) => void
 }
 
 function User6(props: userProps) {
@@ -38,35 +38,43 @@ function User6(props: userProps) {
             <form onSubmit={(event) => submitHandler(event)} >
                 <div className='row align-items-end'>
                     <div className='col'>
+
                         <Input
-                            LabelAddClass="d-block mb-1 fw-bold"
-                            LabelText="First Name"
-                            FormAddClass="border1 bordercolor2_4"
-                            InputAddClass="p-2"
-                            InputType="text"
-                            InputName="firstname"
-                            InputValue={firstname}
-                            onChangeHandler={onChangeHandler}
+                            labelText={'First Name'}
+                            labelStyleClass={'d-block mb-1 fw-bold'}
+                            formStyleClass={'border1 bordercolor2_4'}
+                            inputStyleClass={'p-2'}
+                            inputStyleId={'firstname'}
+                            autoComplete={'on'}
+                            type={'text'}
+                            name={'firstname'}
+                            value={firstname}
+                            onChange={(event) => { onChangeHandler(event) }}
                         />
 
                     </div>
                     <div className='col'>
+
                         <Input
-                            LabelAddClass="d-block mb-1 fw-bold"
-                            LabelText="Last Name"
-                            FormAddClass="border1 bordercolor2_4"
-                            InputAddClass="p-2"
-                            InputType="text"
-                            InputName="email"
-                            InputValue={email}
-                            onChangeHandler={onChangeHandler}
+                            labelText={'Last Name'}
+                            labelStyleClass={'d-block mb-1 fw-bold'}
+                            formStyleClass={'border1 bordercolor2_4'}
+                            inputStyleClass={'p-2'}
+                            inputStyleId={'email'}
+                            autoComplete={'on'}
+                            type={'text'}
+                            name={'email'}
+                            value={email}
+                            onChange={(event) => { onChangeHandler(event) }}
                         />
+
                     </div>
 
                     <div className='col-auto'>
-                        <SuccessButton
-                            ButtonText='Add User'
-                        />
+                        <Button
+                            styleClass={`btn_primary`}> Add User
+                        </Button >
+
                     </div>
                 </div>
             </form>

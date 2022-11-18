@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { DangerButton, SuccessButton } from '../../../Shared/SharedComponentPath';
+import { Button } from '../../../Shared/SharedComponentPath';
 
 type userType = {
   name: string;
@@ -52,16 +52,19 @@ const UserDetail = () => {
 
         </div>
         <div className="col-auto">
-          <SuccessButton
-            onClickHandle={loginHandler}
-            ButtonText='Login'
-          />
+
+          <Button
+            onClick={() => loginHandler()}
+            styleClass={`btn_primary`}> Login
+          </Button >
         </div>
         <div className="col-auto">
-          <DangerButton
-            onClickHandle={logOutHandler}
-            ButtonText='Login Out'
-          />
+
+          <Button
+            onClick={() => logOutHandler()}
+            styleClass={`btn_danger`}> Logout
+          </Button >
+
         </div>
       </div>
     </div>

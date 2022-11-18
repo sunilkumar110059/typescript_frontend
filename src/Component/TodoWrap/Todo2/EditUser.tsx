@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Input, SuccessButton } from '../../../Shared/SharedComponentPath';
+import { Input, Button } from '../../../Shared/SharedComponentPath';
 import { useContextFun } from '../../../ContextApi/TodoContext/TodoContext';
 import { PostType } from '../../../ContextApi/TodoContext/TodoDataType';
 
@@ -42,33 +42,38 @@ function EditUser() {
                 <div className='row align-items-end'>
                     <div className='col'>
                         <Input
-                            LabelAddClass="d-block mb-1 fw-bold"
-                            LabelText="First Name"
-                            FormAddClass="border1 bordercolor2_4"
-                            InputAddClass="p-2"
-                            InputType="text"
-                            InputName="name"
-                            InputValue={EditUser.name}
-                            onChangeHandler={onChangeHander}
+                            labelText={'First Name'}
+                            labelStyleClass={'d-block mb-1 fw-bold'}
+                            formStyleClass={'border1 bordercolor2_4'}
+                            inputStyleClass={'p-2'}
+                            inputStyleId={'firstname'}
+                            autoComplete={'on'}
+                            type={'text'}
+                            name={'name'}
+                            value={EditUser.name}
+                            onChange={(event) => { onChangeHander(event) }}
                         />
+
                     </div>
 
                     <div className='col'>
                         <Input
-                            LabelAddClass="d-block mb-1 fw-bold"
-                            LabelText="Email"
-                            FormAddClass="border1 bordercolor2_4"
-                            InputAddClass="p-2"
-                            InputType="text"
-                            InputName="email"
-                            InputValue={EditUser.email}
-                            onChangeHandler={onChangeHander}
+                            labelText={'Email'}
+                            labelStyleClass={'d-block mb-1 fw-bold'}
+                            formStyleClass={'border1 bordercolor2_4'}
+                            inputStyleClass={'p-2'}
+                            inputStyleId={'email'}
+                            autoComplete={'on'}
+                            type={'text'}
+                            name={'email'}
+                            value={EditUser.email}
+                            onChange={(event) => { onChangeHander(event) }}
                         />
+
                     </div>
                     <div className='col-auto'>
-                        <SuccessButton
-                            ButtonText='Edit User'
-                        />
+                      
+                        <Button styleClass={'btn_primary'} >Edit User</Button>
                     </div>
                 </div>
             </form>

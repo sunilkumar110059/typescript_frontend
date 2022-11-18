@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { SuccessButton } from '../../../Shared/SharedComponentPath';
+import { Button } from '../../../Shared/SharedComponentPath';
 
 type userType = {
   name: string;
@@ -49,10 +49,12 @@ const UserDetail = () => {
 
         </div>
         <div className="col-auto">
-          <SuccessButton
-            onClickHandle={loginHandler}
-            ButtonText='Assign Email'
-          />
+
+          <Button
+            onClick={() => loginHandler()}
+            disabled={true}
+            styleClass={`btn_primary`}> Assign Email
+          </Button >
         </div>
 
       </div>

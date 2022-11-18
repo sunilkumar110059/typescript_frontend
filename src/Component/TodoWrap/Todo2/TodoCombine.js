@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { SuccessButton } from '../../../Shared/SharedComponentPath';
+import { Button } from '../../../Shared/SharedComponentPath';
 import EditUser from './EditUser';
 import UserList from './UserList';
 import PostUser from './PostUser';
@@ -22,12 +22,13 @@ const TodoCombine = () => {
 
       <div className='wrapper px-4'>
         {isShow && <EditUser />}
-          {isAddPost ? <PostUser /> : (
-            <SuccessButton
-              onClickHandle={() => addPostShow()}
-              ButtonText='Add Post'
-            />
-          )}       
+        {isAddPost ? <PostUser /> : (
+          <Button
+            onClick={() => addPostShow()}
+            styleClass={`btn_primary`}> Add Post
+          </Button >
+        )}
+
         <UserList />
       </div>
     </Fragment>

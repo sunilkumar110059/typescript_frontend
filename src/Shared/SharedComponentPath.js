@@ -1,22 +1,15 @@
-// Button custom Component
-import DangerButton from "./Buttons/DangerButton";
-import SuccessButton from "./Buttons/SuccessButton";
 
-// form custom Component
-import SelectBox from "./Forms/SelectBox";
-import Input from "./Forms/Input";
-import TextArea from "./Forms/TextArea";
+import Button from "./Form/Buttons/Button";
+import Input from "./Form/Inputs/Input";
+import SelectBox from './Form/SelectBox/SelectBox';
+import TextArea from './Form/TextArea/TextArea';
+
 
 // Modal custom Component
 import ConfirmationModal from "./Modals/ConfirmationModal";
 
 export {
-    // Button 
-    DangerButton, SuccessButton,
-
-    // form 
-    SelectBox, Input, TextArea,
-
+    Button, Input, SelectBox, TextArea,
     // Modal
     ConfirmationModal
-} 
+}

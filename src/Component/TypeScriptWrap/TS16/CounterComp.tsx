@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-import { DangerButton, SuccessButton } from '../../../Shared/SharedComponentPath';
+import { Button } from '../../../Shared/SharedComponentPath';
 import { CountEnum } from './ReducerType'
 import { counterReducer } from './ReducerCounter';
 
@@ -16,24 +16,29 @@ function CounterComp() {
             <div className="row">
 
                 <div className="col-auto">
-                    <SuccessButton
-                        onClickHandle={() => dispatch({ type: CountEnum.DEC, payload: 10 })}
-                        ButtonText='DEC'
-                    />
+
+                    <Button
+                        onClick={() => dispatch({ type: CountEnum.DEC, payload: 10 })}
+                        styleClass={`btn_primary`}> DEC
+                    </Button >
                 </div>
                 <div className="col-auto"><h1>{state.count}</h1></div>
                 <div className="col-auto">
-                    <SuccessButton
-                        onClickHandle={() => dispatch({ type: CountEnum.INC, payload: 10 })}
-                        ButtonText='INC'
-                    />
+                    <Button
+                        onClick={() => dispatch({ type: CountEnum.INC, payload: 10 })}
+                        styleClass={`btn_primary`}> INC
+                    </Button >
+
                 </div>
 
                 <div className="col-auto">
-                    <DangerButton
-                        onClickHandle={() => dispatch({ type: CountEnum.RESET, payload: 0 })}
-                        ButtonText='RESET'
-                    />
+
+                    <Button
+                        onClick={() => dispatch({ type: CountEnum.RESET, payload: 0 })}
+                        styleClass={`btn_danger`}> RESET
+                    </Button >
+
+                   
                 </div>
 
             </div>

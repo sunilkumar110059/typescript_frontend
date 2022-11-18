@@ -6,10 +6,12 @@ import HeaderIndex from "./Constant/Header/HeaderIndex";
 import FooterIndex from "./Constant/Footer/FooterIndex";
 
 import HomeIndex from "./Component/Home/HomeIndex";
+import FormIndex from "./Component/Form/FormIndex";
 import PageNotFoundIndex from "./Component/PageNotFound/PageNotFoundIndex";
 
 import { TabWrapIndex, TabIndex1, TabIndex2, TabIndex3, TabIndex4, TabIndex5 } from './Component/TabWrap/TabWrapModule';
 import { AccordionWrapIndex, AccordionIndex1, AccordionIndex2, AccordionIndex3, AccordionIndex4, AccordionIndex5 } from './Component/AccordionWrap/AccordionModule';
+import { FilterWrapIndex, FilterIndex1, FilterIndex2, FilterIndex3, FilterIndex4, FilterIndex5 } from './Component/FilterWrap/FilterModule';
 import { HOCWrapIndex, HOCIndex1, HOCIndex2, HOCIndex3, HOCIndex4, HOCIndex5 } from './Component/HOCWrap/HOCWrapModule';
 import { OOPWrapIndex, OOPIndex1, OOPIndex2, OOPIndex3, OOPIndex4, OOPIndex5 } from './Component/OOpWrap/OOPWrapModule';
 import { RatingWrapIndex, RatingIndex1, RatingIndex2, RatingIndex3, RatingIndex4, RatingIndex5 } from './Component/RatingWrap/RatingModule';
@@ -23,6 +25,7 @@ import {
   TS14, TS15, TS16, TS17, TS18, TS19, TS20, TS21, TS22, TS23, TS24, TS25, TS26, TS27
 } from './Component/TypeScriptWrap/TSModule';
 
+
 function App() {
   return (
     <Fragment>
@@ -30,6 +33,8 @@ function App() {
       <div className="bodypart">
         <Routes>
           <Route path={ROUTE_NAV.HOME_PATH} element={<HomeIndex />} />
+          <Route path={ROUTE_NAV.FORM_PATH} element={<FormIndex />} />
+          
 
           <Route path={ROUTE_NAV.TAB_PATH} element={<TabWrapIndex />}>
             <Route index element={<TabIndex1 />} />
@@ -47,6 +52,15 @@ function App() {
             <Route path={ROUTE_PAGES.ACCORDION3_PATH} element={<AccordionIndex3 />} />
             <Route path={ROUTE_PAGES.ACCORDION4_PATH} element={<AccordionIndex4 />} />
             <Route path={ROUTE_PAGES.ACCORDION5_PATH} element={<AccordionIndex5 />} />
+          </Route>
+
+          <Route path={ROUTE_NAV.FILTER_PATH} element={<FilterWrapIndex />} >
+            <Route index element={<FilterIndex1 />} />
+            <Route path={ROUTE_PAGES.FILTER1_PATH} element={<FilterIndex1 />} />
+            <Route path={ROUTE_PAGES.FILTER2_PATH} element={<FilterIndex2 />} />
+            <Route path={ROUTE_PAGES.FILTER3_PATH} element={<FilterIndex3 />} />
+            <Route path={ROUTE_PAGES.FILTER4_PATH} element={<FilterIndex4/>} />
+            <Route path={ROUTE_PAGES.FILTER5_PATH} element={<FilterIndex5 />} />
           </Route>
 
           <Route path={ROUTE_NAV.HOC_PATH} element={<HOCWrapIndex />} >
@@ -89,8 +103,7 @@ function App() {
             <Route path={ROUTE_PAGES.CRUD5_PATH} element={<CrudIndex5 />} />
           </Route>
 
-
-
+          
           <Route path={ROUTE_NAV.TODO_PATH} element={<TodoWrapIndex />} >
             <Route index element={<TodoIndex1 />} />
             <Route path={ROUTE_PAGES.TODO1_PATH} element={<TodoIndex1 />} />

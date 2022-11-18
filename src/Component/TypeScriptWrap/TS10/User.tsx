@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SuccessButton, DangerButton } from '../../../Shared/SharedComponentPath';
+import { Button } from '../../../Shared/SharedComponentPath';
 
 
 function User() {
@@ -22,16 +22,19 @@ function User() {
                     {isLogin ? <h1 className='color4_1'>User Login</h1> : <h1 className='color3_1'>User Logout</h1>}
                 </div>
                 <div className="col-auto">
-                    <SuccessButton
-                        onClickHandle={loginHandler}
-                        ButtonText='Login'
-                    />
+
+                    <Button
+                        onClick={(event) => loginHandler(event)}
+                        styleClass={`btn_primary`}> Login
+                    </Button >
+
                 </div>
                 <div className="col-auto">
-                    <DangerButton
-                        onClickHandle={logOutHandler}
-                        ButtonText='Login'
-                    />
+                    <Button
+                        onClick={(event) => logOutHandler(event)}
+                        disabled={true}
+                        styleClass={`btn_danger`}> Logout
+                    </Button >
                 </div>
             </div>
 

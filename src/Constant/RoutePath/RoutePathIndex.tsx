@@ -1,7 +1,9 @@
 const ROUTE_NAV = {
     HOME_PATH: '/',
+    FORM_PATH: '/formwrap',
     TAB_PATH: '/tabwrap',
     ACCORDION_PATH: '/accordionwrap',
+    FILTER_PATH: '/filterwrap',
     HOC_PATH: '/hocwrap',
     OOP_PATH: '/oopwrap',
     RATING_PATH: '/ratingwrap',
@@ -24,7 +26,15 @@ const ROUTE_PAGES = {
     ACCORDION3_PATH: `${ROUTE_NAV.ACCORDION_PATH}/accordion3`,
     ACCORDION4_PATH: `${ROUTE_NAV.ACCORDION_PATH}/accordion4`,
     ACCORDION5_PATH: `${ROUTE_NAV.ACCORDION_PATH}/accordion5`,
-        
+
+
+    FILTER1_PATH: `${ROUTE_NAV.FILTER_PATH}/filter1`,
+    FILTER2_PATH: `${ROUTE_NAV.FILTER_PATH}/filter2`,
+    FILTER3_PATH: `${ROUTE_NAV.FILTER_PATH}/filter3`,
+    FILTER4_PATH: `${ROUTE_NAV.FILTER_PATH}/filter4`,
+    FILTER5_PATH: `${ROUTE_NAV.FILTER_PATH}/filter5`,
+
+    
     HOC1_PATH: `${ROUTE_NAV.HOC_PATH}/hoc1`,
     HOC2_PATH: `${ROUTE_NAV.HOC_PATH}/hoc2`,
     HOC3_PATH: `${ROUTE_NAV.HOC_PATH}/hoc3`,

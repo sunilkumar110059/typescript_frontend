@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { SuccessButton } from '../../../Shared/SharedComponentPath';
+import { Button } from '../../../Shared/SharedComponentPath';
 
 
 // start 
@@ -62,9 +62,11 @@ function UserDetail() {
     <div className='cover'>
       <div className="row">
         <div className="col-auto">
-          <SuccessButton
-            onClickHandle={addUserHandler}
-            ButtonText='Add User' />
+        
+          <Button
+            onClick={() => addUserHandler()}
+            styleClass={`btn_primary`}> Add User
+          </Button >
         </div>
         <div className="col-12 mb-4">
           <table className='d-table-collapse w-100 border1 bordercolor2_5'>

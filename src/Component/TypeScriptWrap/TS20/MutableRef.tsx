@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { SuccessButton } from '../../../Shared/SharedComponentPath'
+import { Button } from '../../../Shared/SharedComponentPath'
 
 function MutableRef() {
     const interValRef = useRef<number | undefined>(undefined)
@@ -26,10 +26,10 @@ function MutableRef() {
             <div className="row">
                 <div className="col-12"><h1>{timer}</h1></div>
                 <div className="col-auto">
-                    <SuccessButton
-                        onClickHandle={() => stopTimer()}
-                        ButtonText='Stop Timer'
-                    />
+                    <Button
+                        onClick={() => stopTimer()}
+                        styleClass={`btn_primary`}> Stop Timer
+                    </Button >
                 </div>
             </div>
 

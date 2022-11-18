@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, SuccessButton } from '../../../Shared/SharedComponentPath';
+import { Input, Button } from '../../../Shared/SharedComponentPath';
 
 type EventCompProps = {
     onChangeHandler: (event: React.ChangeEvent<HTMLInputElement>) => void
@@ -15,24 +15,31 @@ function EventComp(props: EventCompProps) {
                 <div className='row align-items-end'>
                     <div className='col'>
                         <Input
-                            LabelAddClass="d-block mb-1 fw-bold"
-                            LabelText="onChange Event Handler"
-                            FormAddClass="border1 bordercolor2_4"
-                            InputAddClass="p-2"
-                            InputType="text"
-                            onChangeHandler={onChangeHandler}
+                            labelText={'onChange Event Handler'}
+                            labelStyleClass={'d-block mb-1 fw-bold'}
+                            formStyleClass={'border1 bordercolor2_4'}
+                            inputStyleClass={'p-2'}
+                            inputStyleId={'firstname'}
+                            autoComplete={'on'}
+                            type={'text'}
+                            onChange={(event) => { onChangeHandler(event) }}
                         />
                     </div>
-                    <div className='col-auto'> <SuccessButton ButtonText='OnSubmit Handler' /></div>
+                    <div className='col-auto'>
+                        <Button styleClass={`btn_primary`}> OnSubmit Handler </Button >
+
+                    </div>
                 </div>
             </form>
 
             <div className='row mt-3'>
                 <div className='col-auto'>
-                    <SuccessButton
-                        ButtonText='OnClick Handler'
-                        onClickHandle={(event: React.MouseEvent<HTMLButtonElement>) => onClickHandler(event, 15)}
-                    />
+
+                 
+                    <Button
+                        styleClass={`btn_primary`}
+                        onClick={(event) => onClickHandler(event, 15)}>
+                        OnClick Handler </Button >
                 </div>
             </div>
 

@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-import { SuccessButton } from '../../../Shared/SharedComponentPath';
+import { Button } from '../../../Shared/SharedComponentPath';
 import { counterReducer } from './ReducerCounter';
 
 
@@ -15,19 +15,19 @@ function CounterComp() {
             <div className="row">
 
                 <div className="col-auto">
-                    <SuccessButton
-                        onClickHandle={() => dispatch({ type: "INCREMENT", payload: 10 })}
-                        ButtonText='INC'
-                    />
+                    <Button
+                        onClick={() => dispatch({ type: "INCREMENT", payload: 10 })}
+                        styleClass={`btn_primary`}> INC
+                    </Button >
                 </div>
 
                 <div className="col-auto"><h1>{state.count}</h1></div>
 
                 <div className="col-auto">
-                    <SuccessButton
-                        onClickHandle={() => dispatch({ type: "DECREMENT", payload: 10 })}
-                        ButtonText='DEC'
-                    />
+                    <Button
+                        onClick={() => dispatch({ type: "DECREMENT", payload: 10 })}
+                        styleClass={`btn_danger`}> DEC
+                    </Button >
                 </div>
 
             </div>

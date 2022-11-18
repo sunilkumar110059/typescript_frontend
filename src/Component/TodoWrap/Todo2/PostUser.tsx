@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Input, SuccessButton } from '../../../Shared/SharedComponentPath';
+import { Input, Button } from '../../../Shared/SharedComponentPath';
 import { useContextFun } from '../../../ContextApi/TodoContext/TodoContext';
 import { PostType } from '../../../ContextApi/TodoContext/TodoDataType';
 
@@ -11,8 +11,8 @@ function PostUser() {
     const [PostUserState, SetPostUser] = useState<PostType>(
         {
             id: new Date().getTime(),
-            name: "name"+Math.random().toString(36).substring(1, 10),
-            username: "username"+ Math.random().toString(36).substring(2, 30),
+            name: "name" + Math.random().toString(36).substring(1, 10),
+            username: "username" + Math.random().toString(36).substring(2, 30),
             email: Math.random().toString(20).substring(3, 28) + "@gmail.com",
             phone: Math.floor(Math.random() * 1000000000).toString(),
             website: "xyz" + Math.random().toString(18).substring(1, 9) + ".com",
@@ -53,74 +53,86 @@ function PostUser() {
             <form onSubmit={(event) => submitHandler(event)}>
                 <div className='row align-items-end'>
                     <div className='col'>
+
                         <Input
-                            LabelAddClass="d-block mb-1 fw-bold"
-                            LabelText="Name"
-                            FormAddClass="border1 bordercolor2_4"
-                            InputAddClass="p-2"
-                            InputType="text"
-                            InputName="name"
-                            InputValue={PostUserState.name}
-                            onChangeHandler={onChangeHander}
+                            labelText={'Name'}
+                            labelStyleClass={'d-block mb-1 fw-bold'}
+                            formStyleClass={'border1 bordercolor2_4'}
+                            inputStyleClass={'p-2'}
+                            inputStyleId={'firstname'}
+                            autoComplete={'on'}
+                            type={'text'}
+                            name={'name'}
+                            value={PostUserState.name}
+                            onChange={(event) => { onChangeHander(event) }}
+                        />
+
+                    </div>
+
+                    <div className='col'>
+                        <Input
+                            labelText={'User Name'}
+                            labelStyleClass={'d-block mb-1 fw-bold'}
+                            formStyleClass={'border1 bordercolor2_4'}
+                            inputStyleClass={'p-2'}
+                            inputStyleId={'username'}
+                            autoComplete={'on'}
+                            type={'text'}
+                            name={'username'}
+                            value={PostUserState.username}
+                            onChange={(event) => { onChangeHander(event) }}
+                        />
+                    </div>
+
+                    <div className='col'>
+
+                        <Input
+                            labelText={'Email'}
+                            labelStyleClass={'d-block mb-1 fw-bold'}
+                            formStyleClass={'border1 bordercolor2_4'}
+                            inputStyleClass={'p-2'}
+                            inputStyleId={'email'}
+                            autoComplete={'on'}
+                            type={'text'}
+                            name={'email'}
+                            value={PostUserState.email}
+                            onChange={(event) => { onChangeHander(event) }}
                         />
                     </div>
 
                     <div className='col'>
                         <Input
-                            LabelAddClass="d-block mb-1 fw-bold"
-                            LabelText="User Name"
-                            FormAddClass="border1 bordercolor2_4"
-                            InputAddClass="p-2"
-                            InputType="text"
-                            InputName="username"
-                            InputValue={PostUserState.username}
-                            onChangeHandler={onChangeHander}
+                            labelText={'Phone'}
+                            labelStyleClass={'d-block mb-1 fw-bold'}
+                            formStyleClass={'border1 bordercolor2_4'}
+                            inputStyleClass={'p-2'}
+                            inputStyleId={'phone'}
+                            autoComplete={'on'}
+                            type={'text'}
+                            name={'phone'}
+                            value={PostUserState.phone}
+                            onChange={(event) => { onChangeHander(event) }}
                         />
+
                     </div>
 
                     <div className='col'>
                         <Input
-                            LabelAddClass="d-block mb-1 fw-bold"
-                            LabelText="Email"
-                            FormAddClass="border1 bordercolor2_4"
-                            InputAddClass="p-2"
-                            InputType="text"
-                            InputName="email"
-                            InputValue={PostUserState.email}
-                            onChangeHandler={onChangeHander}
-                        />
-                    </div>
-
-                    <div className='col'>
-                        <Input
-                            LabelAddClass="d-block mb-1 fw-bold"
-                            LabelText="Phone"
-                            FormAddClass="border1 bordercolor2_4"
-                            InputAddClass="p-2"
-                            InputType="text"
-                            InputName="phone"
-                            InputValue={PostUserState.phone}
-                            onChangeHandler={onChangeHander}
-                        />
-                    </div>
-
-                    <div className='col'>
-                        <Input
-                            LabelAddClass="d-block mb-1 fw-bold"
-                            LabelText="Website"
-                            FormAddClass="border1 bordercolor2_4"
-                            InputAddClass="p-2"
-                            InputType="text"
-                            InputName="website"
-                            InputValue={PostUserState.website}
-                            onChangeHandler={onChangeHander}
+                            labelText={'Website'}
+                            labelStyleClass={'d-block mb-1 fw-bold'}
+                            formStyleClass={'border1 bordercolor2_4'}
+                            inputStyleClass={'p-2'}
+                            inputStyleId={'website'}
+                            autoComplete={'on'}
+                            type={'text'}
+                            name={'website'}
+                            value={PostUserState.website}
+                            onChange={(event) => { onChangeHander(event) }}
                         />
                     </div>
 
                     <div className='col-auto'>
-                        <SuccessButton
-                            ButtonText='Add User'
-                        />
+                        <Button styleClass={'btn_primary'} >Add User</Button>
                     </div>
 
                 </div>

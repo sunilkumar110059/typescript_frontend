@@ -7,13 +7,13 @@ function RefDoms() {
     useEffect(() => {
         let abc = inputRef.current?.focus()
         console.log(abc)
-    }, [])
+    }, [inputRef])
     return (
         <div className='cover'>
 
             <div className="row">
                 <div className="col">
-                    <Input
+                    {/* <InputStyle
                         LabelAddClass="d-block mb-1 fw-bold"
                         LabelText="Input Current Focus"
                         FormAddClass="border1 bordercolor2_4"
@@ -21,7 +21,21 @@ function RefDoms() {
                         InputType="text"
                         useRefText={inputRef}
 
+                    /> */}
+
+
+                    <Input
+                        labelText={'Input Current Focus'}
+                        labelStyleClass={'d-block mb-1 fw-bold'}
+                        formStyleClass={'border1 bordercolor2_4'}
+                        inputStyleClass={'p-2'}
+                        inputStyleId={'firstname'}
+                        autoComplete={'on'}
+                        type={'text'}
+                        ref={inputRef}
+                    
                     />
+
 
                 </div>
 

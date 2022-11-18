@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react'
-import { DangerButton, SuccessButton } from '../../../Shared/SharedComponentPath';
+import { Button } from '../../../Shared/SharedComponentPath';
 import Private from './Private';
 import Profile from './Profile';
 
@@ -38,9 +38,21 @@ function TS21() {
 
                     <div className="col-auto">
                         {isLogin ?
-                            (<DangerButton onClickHandle={logOutHandler} ButtonText='Login Out' />)
+                            (
+                                <Button
+                                    onClick={() => logOutHandler()}
+                                    styleClass={`btn_danger`}> Login Out
+                                </Button >
+
+                            )
                             :
-                            (<SuccessButton onClickHandle={loginHandler} ButtonText='Login' />)
+                            (
+
+                                <Button
+                                    onClick={() => loginHandler()}
+                                    styleClass={`btn_primary`}> Login
+                                </Button >
+                            )
                         }
                     </div>
 

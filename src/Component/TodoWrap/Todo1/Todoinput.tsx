@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import { Input, SuccessButton } from '../../../Shared/SharedComponentPath';
+import { Input, Button } from '../../../Shared/SharedComponentPath';
 import { InterFaceTodo, userObj } from './InterfaceTodo1';
 
 
@@ -38,47 +38,57 @@ function Todoinput(props: TodoinputProps) {
             <form onSubmit={(event) => submitHandler(event)}>
                 <div className='row align-items-end'>
                     <div className='col'>
+
                         <Input
-                            LabelAddClass="d-block mb-1 fw-bold"
-                            LabelText="First Name"
-                            FormAddClass="border1 bordercolor2_4"
-                            InputAddClass="p-2"
-                            InputType="text"
-                            InputName="fistname"
-                            InputValue={fistname}
-                            onChangeHandler={onChangeHander}
+                            labelText={'First Name'}
+                            labelStyleClass={'d-block mb-1 fw-bold'}
+                            formStyleClass={'border1 bordercolor2_4'}
+                            inputStyleClass={'p-2'}
+                            inputStyleId={'firstname'}
+                            autoComplete={'on'}
+                            type={'text'}
+                            name={'fistname'}
+                            value={fistname}
+                            onChange={(event) => { onChangeHander(event) }}
+                        />
+
+
+                    </div>
+                    <div className='col'>
+
+
+                        <Input
+                            labelText={'Email'}
+                            labelStyleClass={'d-block mb-1 fw-bold'}
+                            formStyleClass={'border1 bordercolor2_4'}
+                            inputStyleClass={'p-2'}
+                            inputStyleId={'email'}
+                            autoComplete={'on'}
+                            type={'text'}
+                            name={'email'}
+                            value={email}
+                            onChange={(event) => { onChangeHander(event) }}
                         />
 
                     </div>
                     <div className='col'>
                         <Input
-                            LabelAddClass="d-block mb-1 fw-bold"
-                            LabelText="Email"
-                            FormAddClass="border1 bordercolor2_4"
-                            InputAddClass="p-2"
-                            InputType="text"
-                            InputName="email"
-                            InputValue={email}
-                            onChangeHandler={onChangeHander}
+                            labelText={'Age'}
+                            labelStyleClass={'d-block mb-1 fw-bold'}
+                            formStyleClass={'border1 bordercolor2_4'}
+                            inputStyleClass={'p-2'}
+                            inputStyleId={'age'}
+                            autoComplete={'on'}
+                            type={'text'}
+                            name={'age'}
+                            value={age}
+                            onChange={(event) => { onChangeHander(event) }}
                         />
-                    </div>
-                    <div className='col'>
-                        <Input
-                            LabelAddClass="d-block mb-1 fw-bold"
-                            LabelText="Age"
-                            FormAddClass="border1 bordercolor2_4"
-                            InputAddClass="p-2"
-                            InputType="text"
-                            InputName="age"
-                            InputValue={age}
-                            onChangeHandler={onChangeHander}
-                        />
+
 
                     </div>
                     <div className='col-auto'>
-                        <SuccessButton
-                            ButtonText='Add User'
-                        />
+                        <Button> Add User</Button>
 
                     </div>
                 </div>
