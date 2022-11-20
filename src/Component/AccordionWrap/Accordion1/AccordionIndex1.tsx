@@ -8,12 +8,8 @@ function AccordionIndex1() {
     const [isShow, SetIsShow] = useState<boolean | number>(false)
 
     const accordionHandler = (id: number) => {
-        if (isShow === id) {
-            SetIsShow(false)
-        }
-        else {
-            SetIsShow(id)
-        }
+        if (isShow === id) { SetIsShow(false) }
+        else { SetIsShow(id) }
     }
 
     return (
@@ -51,7 +47,7 @@ function AccordionIndex1() {
                                         <td className='p-3'> {curElm.phone} </td>
                                         <td className='p-3'> {curElm.website} </td>
                                         <td className='p-3' onClick={() => accordionHandler(curElm.id)}>
-                                            { isShow === curElm.id ? <BsArrowDownSquareFill className='fs-4' /> : <BsFillArrowRightSquareFill className='fs-4 color3_1'/> }                                                                                        
+                                            {isShow === curElm.id ? <BsArrowDownSquareFill className='fs-4' /> : <BsFillArrowRightSquareFill className='fs-4 color3_1' />}
                                         </td>
                                     </tr>
 

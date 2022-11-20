@@ -1,32 +1,42 @@
 import React, { Fragment, useState } from 'react';
 
-import { Button, Input, SelectBox, TextArea } from '../../Shared/SharedComponentPath';
+import { Button, Input, SelectBox, TextArea, CheckBox } from '../../Shared/SharedComponentPath';
 
-
+const aminity = ['Swiming Pool', 'Laundry and Dry Cleaner', 'Car Rental', "WiFi", 'Hair Dresser', 'Meals']
 
 function FormIndex() {
+    const [AminityState, SetAminityFun] = useState<any[]>([])
+    // console.log(AminityState)
+
     const [State, setStateFn] = useState({
         firstname: "",
         lastname: "",
         selectitem: "",
         selectitem2: "",
-        discription: ""
+        discription: "",
+        services: [AminityState]
     })
-
     const { firstname, lastname, selectitem, selectitem2, discription } = State;
-    console.log(State)
+    // console.log(State)
 
+    const checkBoxHandler = (event: any) => {
+        const { name, value, checked } = event.target
+        SetAminityFun({
+            ...AminityState,
+            [name]: checked ? value : ""
+        })
+    }
 
     const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = event.target
         setStateFn({
             ...State,
-            [name]: value
+            [name]: value,
         })
     }
 
+    
     const buttonHandler = (btn: string) => { console.log(btn) }
-
     return (
         <Fragment>
             <div className="cover bg2_5 px-3 border_bottom1 bordercolor2_4 mb-4">
@@ -36,6 +46,27 @@ function FormIndex() {
                 </div>
             </div>
             <div className='container'>
+
+                <div className="cover mb-4">
+                    <div className="row align-items-end">
+                        {aminity.map((elm, index) => (
+                            <div className="col-12 mb-2" key={index}>
+                                <CheckBox
+                                    labelText={elm}
+                                    name={elm}
+                                    value={elm}
+                                    onChange={(event) => checkBoxHandler(event)}
+                                />
+                            </div>
+                        ))}
+
+
+                    </div>
+                </div>
+
+
+
+
                 <div className="cover mb-4">
                     <div className="row align-items-end">
                         <div className="col-3">

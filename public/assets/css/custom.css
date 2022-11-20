@@ -67,3 +67,8 @@
 .forms > .left_icon{position:absolute; top: 0; left:0; height:100%; width:30px; z-index:3;display: flex;justify-content: center;align-items: center;pointer-events:none;}
 
 .shadow1{ -webkit-box-shadow:0 0 15px rgba(0,0,0,0.1);box-shadow:0 0 15pxrgba(0,0,0,0.1);}
+
+.checkbox{display:flex;flex-wrap:wrap;width:100%; align-items: center;}
+.checkbox > .checkbox_childs{flex:0 0 auto;width:auto;}
+.checkbox > .text_left{ padding-left: 10px;}
+.checkbox > .text_right{ padding-right: 10px;}
