@@ -58,22 +58,23 @@ InputStyle.defaultProps = {
 
 }
 
-{/* 
-    < Input
-    labelText = { 'Text With Label'}
-    labelStyleClass = { 'd-block mb-1 fw-bold'}
-    formStyleClass = { 'border1 bordercolor2_4'}
-    inputStyleClass = { 'p-2'}
-    inputStyleId = { 'inputid'}
-    autoComplete = { 'on'}
-    type = { 'text'}
-    name = { 'firstname'}
-    value = { 'Value Text'}
-    placeholder = { 'Placeholder Text'}
-    readOnly = { true}
-    disabled = { true}
-    ref={"domtext"}
-    onChange = {() => { onChangeHandler() }}
-    /> 
+ 
+    // < Input
+    // labelText = { 'Text With Label'}
+    // labelStyleClass = { 'd-block mb-1 fw-bold'}
+    // formStyleClass = { 'border1 bordercolor2_4'}
+    // inputStyleClass = { 'p-2'}
+    // inputStyleId = { 'inputid'}
+    // autoComplete = { 'on'}
+    // type = { 'text'}
+    // name = { 'firstname'}
+    // value = { 'Value Text'}
+    // placeholder = { 'Placeholder Text'}
+    // readOnly = { true}
+    // disabled = { true}
+    // ref={"domtext"}
+    // onChange = {() => { onChangeHandler() }}
+    // /> 
 
-*/}
+
+

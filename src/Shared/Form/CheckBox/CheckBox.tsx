@@ -50,14 +50,14 @@ CheckBox.defaultProps = {
     checkTextPosition: false
 }
 
-{/* 
-    <CheckBox
-    labelText={'Check Box Text'}
-    name={'chargingpoint'}
-    value={"Charging Point"}
-    disabled={true}
-    checkTextPosition={false}
-    onChange={(event) => checkBoxHandler(event)}
-    />            
-*/}
+ 
+    // <CheckBox
+    // labelText={'Check Box Text'}
+    // name={'chargingpoint'}
+    // value={"Charging Point"}
+    // disabled={true}
+    // checkTextPosition={false}
+    // onChange={(event) => checkBoxHandler(event)}
+    // />            
+
 

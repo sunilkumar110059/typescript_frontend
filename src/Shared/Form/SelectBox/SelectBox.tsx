@@ -48,20 +48,20 @@ SelectBox.defaultProps = {
     disabled: false,
     directionIcon: "right_icon"
 }
-{/*  
-    <SelectBox
-    directionIcon={'right_icon bg1'}
-    labelStyleClass={'d-block mb-1 fw-bold'}
-    labelText={'Select Box'}
-    formStyleClass={'border1 bordercolor2_4'}
-    selectStyleClass={'Add_inputClass'}
-    selectStyleId={'selectId'}
-    name={'selectitem'}
-    placeholder={'Placeholder Text'}
-    disabled={true}
-    onChange={(event) => onChangeHandler(event)}
-    optionData={["Lunch", "Dinner", "Breakfast", "Evening"].map((item, index) => (
-    <option value={item} key={index}> {item} </option>
-    ))
-    }/>
-*/}
+
+
+    // <SelectBox
+    // directionIcon={'right_icon bg1'}
+    // labelStyleClass={'d-block mb-1 fw-bold'}
+    // labelText={'Select Box'}
+    // formStyleClass={'border1 bordercolor2_4'}
+    // selectStyleClass={'Add_inputClass'}
+    // selectStyleId={'selectId'}
+    // name={'selectitem'}
+    // placeholder={'Placeholder Text'}
+    // disabled={true}
+    // onChange={(event) => onChangeHandler(event)}
+    // optionData={["Lunch", "Dinner", "Breakfast", "Evening"].map((item, index) => (
+    // <option value={item} key={index}> {item} </option>
+    // ))
+    // }/>

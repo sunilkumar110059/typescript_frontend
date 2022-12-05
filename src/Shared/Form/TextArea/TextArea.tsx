@@ -48,21 +48,20 @@ TextArea.defaultProps = {
     readOnly: false,
 }
 
-{/* 
-    <TextArea
-    labelText={'Text Area'}
-    labelStyleClass={'d-block mb-1 fw-bold'}
-    formStyleClass={'border1 bordercolor2_4'}
-    inputStyleClass={'p-2'}
-    inputStyleId={'discriptionid'}
-    autoComplete={'on'}
-    name={'discription'}
-    value={discription}
-    rows={4}
-    placeholder={'Placeholder Text'}
-    readOnly={true}
-    disabled={true}
-    onChange={(event) => { onChangeHandler(event) }}
-    />
+ 
+    // <TextArea
+    // labelText={'Text Area'}
+    // labelStyleClass={'d-block mb-1 fw-bold'}
+    // formStyleClass={'border1 bordercolor2_4'}
+    // inputStyleClass={'p-2'}
+    // inputStyleId={'discriptionid'}
+    // autoComplete={'on'}
+    // name={'discription'}
+    // value={discription}
+    // rows={4}
+    // placeholder={'Placeholder Text'}
+    // readOnly={true}
+    // disabled={true}
+    // onChange={(event) => { onChangeHandler(event) }}
+    // />
 
-*/}
