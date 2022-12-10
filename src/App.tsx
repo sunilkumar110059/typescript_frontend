@@ -6,6 +6,10 @@ import HeaderIndex from "./Constant/Header/HeaderIndex";
 import FooterIndex from "./Constant/Footer/FooterIndex";
 
 import HomeIndex from "./Component/Home/HomeIndex";
+
+import PraticeIndex from './Component/PraticeWrap/PraticeIndex';
+
+// PRATICE_PATH
 import FormIndex from "./Component/Form/FormIndex";
 import PageNotFoundIndex from "./Component/PageNotFound/PageNotFoundIndex";
 
@@ -25,16 +29,20 @@ import {
   TS14, TS15, TS16, TS17, TS18, TS19, TS20, TS21, TS22, TS23, TS24, TS25, TS26, TS27
 } from './Component/TypeScriptWrap/TSModule';
 
+import { ProjectWrapIndex, ProjectIndex1, ProjectIndex2, ProjectIndex3, ProjectIndex4, ProjectIndex5 } from './Component/ProjectWrap/ProjectModule'
 
 function App() {
   return (
     <Fragment>
+
       <HeaderIndex />
       <div className="bodypart">
         <Routes>
           <Route path={ROUTE_NAV.HOME_PATH} element={<HomeIndex />} />
+          <Route path={ROUTE_NAV.PRATICE_PATH} element={<PraticeIndex />} />
           <Route path={ROUTE_NAV.FORM_PATH} element={<FormIndex />} />
-          
+
+
 
           <Route path={ROUTE_NAV.TAB_PATH} element={<TabWrapIndex />}>
             <Route index element={<TabIndex1 />} />
@@ -59,7 +67,7 @@ function App() {
             <Route path={ROUTE_PAGES.FILTER1_PATH} element={<FilterIndex1 />} />
             <Route path={ROUTE_PAGES.FILTER2_PATH} element={<FilterIndex2 />} />
             <Route path={ROUTE_PAGES.FILTER3_PATH} element={<FilterIndex3 />} />
-            <Route path={ROUTE_PAGES.FILTER4_PATH} element={<FilterIndex4/>} />
+            <Route path={ROUTE_PAGES.FILTER4_PATH} element={<FilterIndex4 />} />
             <Route path={ROUTE_PAGES.FILTER5_PATH} element={<FilterIndex5 />} />
           </Route>
 
@@ -91,7 +99,7 @@ function App() {
             <Route path={ROUTE_PAGES.RATING5_PATH} element={<RatingIndex5 />} />
           </Route>
 
-          
+
 
 
           <Route path={ROUTE_NAV.CRUD_PATH} element={<CrudWrapIndex />} >
@@ -103,7 +111,7 @@ function App() {
             <Route path={ROUTE_PAGES.CRUD5_PATH} element={<CrudIndex5 />} />
           </Route>
 
-          
+
           <Route path={ROUTE_NAV.TODO_PATH} element={<TodoWrapIndex />} >
             <Route index element={<TodoIndex1 />} />
             <Route path={ROUTE_PAGES.TODO1_PATH} element={<TodoIndex1 />} />
@@ -122,8 +130,7 @@ function App() {
             <Route path={ROUTE_PAGES.DSA5_PATH} element={<DSAIndex5 />} />
           </Route>
 
-        
-          
+
           <Route path={ROUTE_NAV.SCRIPT_PATH} element={<ScriptWrapIndex />} >
             <Route index element={<ScriptIndex1 />} />
             <Route path={ROUTE_PAGES.SCRIPT1_PATH} element={<ScriptIndex1 />} />
@@ -163,6 +170,15 @@ function App() {
             <Route path={ROUTE_PAGES.TS25_PATH} element={<TS25 />} />
             <Route path={ROUTE_PAGES.TS26_PATH} element={<TS26 />} />
             <Route path={ROUTE_PAGES.TS27_PATH} element={<TS27 />} />
+          </Route>
+
+          <Route path={ROUTE_NAV.PROJECT_PATH} element={<ProjectWrapIndex />} >
+            <Route index element={<ProjectIndex1 />} />
+            <Route path={ROUTE_PAGES.PROJECT1_PATH} element={<ProjectIndex1 />} />
+            <Route path={ROUTE_PAGES.PROJECT2_PATH} element={<ProjectIndex2 />} />
+            <Route path={ROUTE_PAGES.PROJECT3_PATH} element={<ProjectIndex3 />} />
+            <Route path={ROUTE_PAGES.PROJECT4_PATH} element={<ProjectIndex4 />} />
+            <Route path={ROUTE_PAGES.PROJECT5_PATH} element={<ProjectIndex5 />} />
           </Route>
 
           <Route path={'*'} element={<PageNotFoundIndex />} />

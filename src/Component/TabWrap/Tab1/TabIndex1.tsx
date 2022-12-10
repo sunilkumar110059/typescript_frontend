@@ -4,9 +4,7 @@ import { BsCheckLg } from 'react-icons/bs';
 const colors = ['#ff7f50', '#87cefa', '#da70d6', '#32cd32', '#6495ed', '#ff69b4', '#ba55d3', '#cd5c5c', '#ffa500', '#40e0d0']
 
 function TabIndex1() {
-
     const [ColorState, SetColorFun] = useState(colors[0])
-
     const colorHandler = (color: string) => {
         SetColorFun(color)
     }

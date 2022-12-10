@@ -1,5 +1,6 @@
 const ROUTE_NAV = {
     HOME_PATH: '/',
+    PRATICE_PATH: '/praticewrap',
     FORM_PATH: '/formwrap',
     TAB_PATH: '/tabwrap',
     ACCORDION_PATH: '/accordionwrap',
@@ -12,6 +13,7 @@ const ROUTE_NAV = {
     DSA_PATH: '/dsawrap',
     SCRIPT_PATH: '/scriptwrap',
     TS_PATH: '/tswrap',
+    PROJECT_PATH: '/projectwrap',
 }
 
 const ROUTE_PAGES = {
@@ -27,14 +29,12 @@ const ROUTE_PAGES = {
     ACCORDION4_PATH: `${ROUTE_NAV.ACCORDION_PATH}/accordion4`,
     ACCORDION5_PATH: `${ROUTE_NAV.ACCORDION_PATH}/accordion5`,
 
-
     FILTER1_PATH: `${ROUTE_NAV.FILTER_PATH}/filter1`,
     FILTER2_PATH: `${ROUTE_NAV.FILTER_PATH}/filter2`,
     FILTER3_PATH: `${ROUTE_NAV.FILTER_PATH}/filter3`,
     FILTER4_PATH: `${ROUTE_NAV.FILTER_PATH}/filter4`,
     FILTER5_PATH: `${ROUTE_NAV.FILTER_PATH}/filter5`,
 
-    
     HOC1_PATH: `${ROUTE_NAV.HOC_PATH}/hoc1`,
     HOC2_PATH: `${ROUTE_NAV.HOC_PATH}/hoc2`,
     HOC3_PATH: `${ROUTE_NAV.HOC_PATH}/hoc3`,
@@ -46,7 +46,7 @@ const ROUTE_PAGES = {
     OOP3_PATH: `${ROUTE_NAV.OOP_PATH}/oop3`,
     OOP4_PATH: `${ROUTE_NAV.OOP_PATH}/oop4`,
     OOP5_PATH: `${ROUTE_NAV.OOP_PATH}/oop5`,
-    
+
     RATING1_PATH: `${ROUTE_NAV.RATING_PATH}/rating1`,
     RATING2_PATH: `${ROUTE_NAV.RATING_PATH}/rating2`,
     RATING3_PATH: `${ROUTE_NAV.RATING_PATH}/rating3`,
@@ -104,6 +104,12 @@ const ROUTE_PAGES = {
     TS25_PATH: `${ROUTE_NAV.TS_PATH}/ts25`,
     TS26_PATH: `${ROUTE_NAV.TS_PATH}/ts26`,
     TS27_PATH: `${ROUTE_NAV.TS_PATH}/ts27`,
+
+    PROJECT1_PATH: `${ROUTE_NAV.PROJECT_PATH}/project1`,
+    PROJECT2_PATH: `${ROUTE_NAV.PROJECT_PATH}/project2`,
+    PROJECT3_PATH: `${ROUTE_NAV.PROJECT_PATH}/project3`,
+    PROJECT4_PATH: `${ROUTE_NAV.PROJECT_PATH}/project4`,
+    PROJECT5_PATH: `${ROUTE_NAV.PROJECT_PATH}/project5`,
 
 }
 

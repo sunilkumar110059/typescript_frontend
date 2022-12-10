@@ -53,7 +53,6 @@ function FilterIndex1() {
     }
 
 
-
     useEffect(() => {
         getApiData()
     }, [])
