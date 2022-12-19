@@ -1,31 +1,11 @@
 import React from 'react'
 
-
-// function chunks(arr, num) {
-//     const chunked = []
-
-//     for (let elem of arr) {
-//         let last = chunked[chunked.length - 1]
-//         console.log("last", last)
-
-//         if (!last || last.length === num) {
-//             chunked.push([elem])
-//             console.log("chin", chunked)
-//         }
-//         else {
-//             last.push(elem)
-//         }
-
+// function func2() {
+//     for (var i = 0; i < 3; i++) {
+//         setTimeout(() => console.log(i), 2000);
 //     }
-
-//     return chunked
-
 // }
-
-// let arr = [1, 4, 12, 3, 7, 6, -9, 0, 3]
-// let result = chunks(arr, 4)
-// console.log(result)
-
+// func2();
 
 
 

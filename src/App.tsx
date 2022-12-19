@@ -23,7 +23,11 @@ import { RatingWrapIndex, RatingIndex1, RatingIndex2, RatingIndex3, RatingIndex4
 import { CrudWrapIndex, CrudIndex1, CrudIndex2, CrudIndex3, CrudIndex4, CrudIndex5 } from './Component/CrudWrap/CrudWrapModule';
 import { TodoWrapIndex, TodoIndex1, TodoIndex2, TodoIndex3, TodoIndex4, TodoIndex5 } from './Component/TodoWrap/TodoWrapModule';
 import { DSAWrapIndex, DSAIndex1, DSAIndex2, DSAIndex3, DSAIndex4, DSAIndex5 } from './Component/DSAlgo/DSAWrapModule';
-import { ScriptWrapIndex, ScriptIndex1, ScriptIndex2, ScriptIndex3, ScriptIndex4, ScriptIndex5 } from './Component/ScriptWrap/ScriptModule';
+import { 
+  ScriptWrapIndex, ScriptIndex1, ScriptIndex2, ScriptIndex3, ScriptIndex4, ScriptIndex5,
+  ScriptIndex6, ScriptIndex7, ScriptIndex8, ScriptIndex9, ScriptIndex10, ScriptIndex11,
+  ScriptIndex12, ScriptIndex13, ScriptIndex14, ScriptIndex15
+} from './Component/ScriptWrap/ScriptModule';
 import {
   TSWrapIndex, TS1, TS2, TS3, TS4, TS5, TS6, TS7, TS8, TS9, TS10, TS11, TS12, TS13,
   TS14, TS15, TS16, TS17, TS18, TS19, TS20, TS21, TS22, TS23, TS24, TS25, TS26, TS27
@@ -138,6 +142,16 @@ function App() {
             <Route path={ROUTE_PAGES.SCRIPT3_PATH} element={<ScriptIndex3 />} />
             <Route path={ROUTE_PAGES.SCRIPT4_PATH} element={<ScriptIndex4 />} />
             <Route path={ROUTE_PAGES.SCRIPT5_PATH} element={<ScriptIndex5 />} />
+            <Route path={ROUTE_PAGES.SCRIPT6_PATH} element={<ScriptIndex6 />} />
+            <Route path={ROUTE_PAGES.SCRIPT7_PATH} element={<ScriptIndex7 />} />
+            <Route path={ROUTE_PAGES.SCRIPT8_PATH} element={<ScriptIndex8 />} />
+            <Route path={ROUTE_PAGES.SCRIPT9_PATH} element={<ScriptIndex9 />} />
+            <Route path={ROUTE_PAGES.SCRIPT10_PATH} element={<ScriptIndex10 />} />
+            <Route path={ROUTE_PAGES.SCRIPT11_PATH} element={<ScriptIndex11 />} />
+            <Route path={ROUTE_PAGES.SCRIPT12_PATH} element={<ScriptIndex12 />} />
+            <Route path={ROUTE_PAGES.SCRIPT13_PATH} element={<ScriptIndex13 />} />
+            <Route path={ROUTE_PAGES.SCRIPT14_PATH} element={<ScriptIndex14 />} />
+            <Route path={ROUTE_PAGES.SCRIPT15_PATH} element={<ScriptIndex15 />} />
           </Route>
 
 

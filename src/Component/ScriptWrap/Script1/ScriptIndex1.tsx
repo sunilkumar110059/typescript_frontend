@@ -8,6 +8,7 @@ let cartproduct = [
     { id: 927, product: "Kurta", stock: 5, qty: 1, amount: 120 }
 ]
 
+
 type productTypes = {
     id: number;
     product: string;
@@ -18,10 +19,6 @@ type productTypes = {
 
 function ScriptIndex1() {
     const [CartState, SetCart] = useState<productTypes[]>(cartproduct)
-
-
-    console.log(CartState)
-
     const incQty = (id: number) => {
         const cartInc = CartState.map((prod) => {
             if (prod.stock > prod.qty) {
